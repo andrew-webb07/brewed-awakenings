@@ -5,6 +5,7 @@ const products = getProducts()
 document.addEventListener(
     "click",
     (clickEvent) => {
+        
         const itemClicked = clickEvent.target
         if (itemClicked.id.startsWith("product")) {
             const [, productId] = itemClicked.id.split("--")
